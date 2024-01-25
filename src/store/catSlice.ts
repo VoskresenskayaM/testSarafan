@@ -15,6 +15,7 @@ type CatsState = {
     error: string | null;
     isOpen: boolean;
     selectedCard?:Cat;
+    allCards: Cat[];
   }
 
 export const fetchCats = createAsyncThunk<Cat[], undefined, {rejectValue: string}>(
@@ -33,7 +34,8 @@ const initialState: CatsState={
     list: [],
     loading: false,
     error: null,
-    isOpen: false
+    isOpen: false,
+    allCards: []
 }
 
 const catsSlice = createSlice({
@@ -55,7 +57,12 @@ const catsSlice = createSlice({
         },
         showCard(){},
         showLikeCard(state){
+            state.allCards=state.list;
             state.list = state.list.filter(cat => cat.isLike === true);
+        },
+        showAllCard(state){
+            state.list = state.allCards;
+            state.allCards=[];
         },
         onClose(state){
             state.isOpen=false;
@@ -84,7 +91,7 @@ const catsSlice = createSlice({
         })
     } 
 })
-export const { deleteCat, likeCats, showLikeCard, onClose, cardClik } = catsSlice.actions;
+export const { deleteCat, likeCats, showLikeCard, onClose, cardClik,showAllCard } = catsSlice.actions;
 export default catsSlice.reducer;
 
 function isError(action: AnyAction) {
