@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/testSarafan/static/css/main.3aa91b84.css",
+    "main.js": "/testSarafan/static/js/main.6dc8b5a4.js",
+    "static/js/787.d5fa4d18.chunk.js": "/testSarafan/static/js/787.d5fa4d18.chunk.js",
+    "static/media/like.png": "/testSarafan/static/media/like.4dabba7bad7ff5aaf177.png",
+    "static/media/notLike.png": "/testSarafan/static/media/notLike.49a33fdaac365c00bfa5.png",
+    "index.html": "/testSarafan/index.html",
+    "main.3aa91b84.css.map": "/testSarafan/static/css/main.3aa91b84.css.map",
+    "main.6dc8b5a4.js.map": "/testSarafan/static/js/main.6dc8b5a4.js.map",
+    "787.d5fa4d18.chunk.js.map": "/testSarafan/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3aa91b84.css",
+    "static/js/main.6dc8b5a4.js"
+  ]
+}
