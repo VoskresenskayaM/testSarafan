@@ -1,0 +1,35 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.app__container {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 33% 33% 33% ;
+  grid-template-rows: auto;
+  margin: 40px auto;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 780px){
+  
+  .app__container {
+    grid-template-columns: 50% 50% ;
+  
+  }
+}
+
+@media screen and (max-width: 500px){
+  
+  .app__container {
+    grid-template-columns: 100%;
+  
+  }
+}
+
