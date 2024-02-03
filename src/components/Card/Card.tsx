@@ -19,6 +19,7 @@ interface TodoItemProps {
 const Card: React.FC<TodoItemProps>=({url, id, isLike}) => {
   
     const dispatch = useAppDispatch();
+    console.log('test')
 
   return (
     <div className='card'>
